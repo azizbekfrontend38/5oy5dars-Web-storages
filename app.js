@@ -67,6 +67,8 @@ const form = document.getElementById("form");
       function deletetodo(id) {
         todos = todos.filter((todo) => todo.id !== id);
         uiUpdater();
+        const remove = document.getElementById("myAudio")
+        remove.play()
       }
 
       function changeStatus(id) {
